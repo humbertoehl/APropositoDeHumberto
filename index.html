@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propósito de Humberto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <h1>A propósito de Humberto</h1>
+    </header>
+    
+    <nav id="menu" class="hidden">
+        <ul>
+            <li><a href="#poems">Poemas</a></li>
+            <li><a href="#drawings">Dibujos</a></li>
+            <li><a href="#contact">Sobre mí</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="poems" class="active">
+            <div id="poems-container"></div>
+        </section>
+        <section id="drawings">
+            <p>Próximamente se mostrarán dibujos aquí.</p>
+        </section>
+        <section id="contact">
+            <p>Puedes contactarme a través de <a href="mailto:correo@example.com">correo@example.com</a>.</p>
+        </section>
+    </main>
+</body>
+</html>
