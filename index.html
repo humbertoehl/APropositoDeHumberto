@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <script src="scripts.js" defer></script>
 </head>
 <body>
@@ -28,12 +30,45 @@
         <section id="poems" class="active">
             <div id="poems-container"></div>
         </section>
+
+        
         <section id="drawings">
-            <p>Próximamente se mostrarán dibujos aquí.</p>
-        </section>
+            <h2>Dibujos</h2>
+            <p>A veces hago dibujos feos, mal hechos, pero con corazón.</p>
+            <div class="masonry-grid">
+                <div class="masonry-item"><img src="drawings/PIZZATURNO.webp" alt="Dibujo 1" onclick="openLightbox(this)"></div>
+                <div class="masonry-item"><img src="drawings/TEATRO.webp" alt="Dibujo 2" onclick="openLightbox(this)"></div>
+                <div class="masonry-item"><img src="drawings/MEMORYLANE.webp" alt="Dibujo 3" onclick="openLightbox(this)"></div>
+              </div>
+
+            <div id="lightbox" onclick="closeLightbox()">
+                <img id="lightbox-img" src="" alt="Imagen ampliada">
+              </div>
+          </section>
+          
+
+
         <section id="contact">
-            <p>Puedes contactarme a través de <a href="mailto:correo@example.com">correo@example.com</a>.</p>
-        </section>
+            <h2>Contacto</h2>
+            <img src="Img/contact-photo.webp" alt="Foto de Humberto" class="contact-photo">
+            <p class="contact-text">
+              Soy Humberto. Físico, poetiso, melómano y más cosillas. Si uno solo de mis poemas fue leído por ti, 
+              te agradezco profundamente, pues en cada uno hay sombras de mí, que es tanto un esfuerzo como un placer compartir.
+            </p>
+            <div class="contact-links">
+              <a href="https://instagram.com/humberto_hl/" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+              <a href="https://tiktok.com/@apropositodehumberto" target="_blank">
+                <i class="fab fa-tiktok"></i> TikTok
+              </a>
+              <a href="mailto:humberto.ehl@outlook.com">
+                <i class="fas fa-envelope"></i> Correo
+              </a>
+            </div>
+          </section>
+          
+          
     </main>
 </body>
 </html>

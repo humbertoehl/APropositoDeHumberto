@@ -114,3 +114,17 @@ document.addEventListener("DOMContentLoaded", () => {
         popupContainer.classList.remove("visible");
     }
 });
+
+function openLightbox(image) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  lightboxImg.src = image.src;
+  lightbox.classList.add("visible");
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  lightbox.classList.remove("visible");
+}
+
